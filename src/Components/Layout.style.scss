@@ -1,0 +1,7 @@
+#main-content-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template: 100vh 100vh auto 100vh / 100%;
+  overflow-x: hidden;
+  gap: 4rem;
+}
