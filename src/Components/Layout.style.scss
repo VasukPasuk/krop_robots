@@ -1,7 +1,11 @@
+@import "../style/_colors.scss";
+@import "../style/_variables.scss";
+
 #main-content-wrapper {
   width: 100%;
   display: grid;
-  grid-template: 100vh 100vh auto 100vh / 100%;
+  grid-auto-rows: 100vh;
+  grid-auto-columns: 100vw;
   overflow-x: hidden;
-  gap: 4rem;
+  background: $bg-color;
 }

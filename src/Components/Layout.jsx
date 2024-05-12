@@ -1,17 +1,21 @@
 import React from 'react';
 import './Layout.style.scss'
-import DescriptionPage from "./DescriptionPage/DescriptionPage";
-import EndPage from "./EndPage/EndPage";
-import IntroductionPage from "./IntroductionPage/IntroductionPage";
-import PaginationPage from "./PaginationPage/PaginationPage";
+import IntroductionBlock from "./IntroductionBlock/Introduction.block";
+import CarouselBlock from "./CarouselBlock/Carousel.block";
+import SumoIntroductionBlock from "./SumoIntroductionBlock/SumoIntroduction.block";
+import SumoZonesBlock from "./SumoZonesBlock/SumoZones.block";
+import SumoStagesBlock from "./SumoStagesBlock/SumoStages.block";
+import FooterBlock from "./FooterBlock/Footer.block";
 
 function Layout(props) {
   return (
     <main id={`main-content-wrapper`}>
-      <IntroductionPage/>
-      <PaginationPage/>
-      <DescriptionPage/>
-      <EndPage/>
+      <IntroductionBlock/>
+      <CarouselBlock/>
+      <SumoIntroductionBlock/>
+      <SumoZonesBlock/>
+      <SumoStagesBlock/>
+      <FooterBlock/>
     </main>
   );
 }

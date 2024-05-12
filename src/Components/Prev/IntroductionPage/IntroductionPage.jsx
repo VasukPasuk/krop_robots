@@ -1,6 +1,6 @@
 import React from 'react';
 import './IntroductionPage.style.scss';
-import RobotLogo from "../../robo/RobotLogo";
+import RobotLogo from "../../../robo/RobotLogo";
 
 function IntroductionPage(props) {
   return (
