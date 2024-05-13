@@ -2,6 +2,7 @@
 @import "../style/_variables.scss";
 
 #main-content-wrapper {
+  position: relative;
   width: 100%;
   display: grid;
   grid-auto-rows: 100vh;

@@ -3,6 +3,7 @@ import './Introduction.block.style.scss';
 import {link_names} from "../../constants/.names";
 import Logo from "../../icons/Logo";
 import {RxHamburgerMenu} from "react-icons/rx";
+import ScrollToTopButton from "../ScrollTopButton/ScrollTopButton";
 
 function IntroductionBlock(props) {
   const [visibility, setVisibility] = useState(false);

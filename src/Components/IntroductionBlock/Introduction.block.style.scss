@@ -2,6 +2,7 @@
 @import '../../style/_variables.scss';
 
 #introduction-block {
+  position: relative;
   display: grid;
   grid-template: $header-height auto / 100%;
   header {

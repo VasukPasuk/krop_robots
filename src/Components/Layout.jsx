@@ -6,17 +6,23 @@ import SumoIntroductionBlock from "./SumoIntroductionBlock/SumoIntroduction.bloc
 import SumoZonesBlock from "./SumoZonesBlock/SumoZones.block";
 import SumoStagesBlock from "./SumoStagesBlock/SumoStages.block";
 import FooterBlock from "./FooterBlock/Footer.block";
+import ScrollToTopButton from "./ScrollTopButton/ScrollTopButton";
 
 function Layout(props) {
   return (
-    <main id={`main-content-wrapper`}>
-      <IntroductionBlock/>
-      <CarouselBlock/>
-      <SumoIntroductionBlock/>
-      <SumoZonesBlock/>
-      <SumoStagesBlock/>
-      <FooterBlock/>
-    </main>
+    <>
+      <main id={`main-content-wrapper`}>
+        <IntroductionBlock/>
+        <CarouselBlock/>
+        <SumoIntroductionBlock/>
+        <SumoZonesBlock/>
+        <SumoStagesBlock/>
+        <FooterBlock/>
+        
+      </main>
+      <ScrollToTopButton/>
+    </>
+  
   );
 }
 

@@ -9,3 +9,11 @@ $bg-color: rgb(0,0,0);
 $header-height: 64px;
 $header-bg-color: red;
 $header-link-color: rgb(0,0,0);
+
+/* [carousel variables] */
+$circle-size: 12.5px;
+$active-circle-scale: 1.2;
+$circles-gap: 0.5rem;
+$circle-color: $bg-gray-600;
+$circle-active-color: $bg-gray-500;
+$tag-icon-color: #FF5B37;
