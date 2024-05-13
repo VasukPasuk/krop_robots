@@ -19,7 +19,7 @@ function Layout(props) {
         <SumoStagesBlock/>
         <FooterBlock/>
       </main>
-      <ScrollToTopButton/>
+      {/*<ScrollToTopButton/>*/}
     </>
   
   );
