@@ -4,6 +4,9 @@
 .sumo-introduction-block {
   display: grid;
   grid-template: 100% / 50% auto;
+  @media screen and (max-width: 680px) {
+    grid-template:  50% auto / 100%;
+  }
   .sumo-introduction-block-text-wrapper {
     display: flex;
     flex-direction: column;
@@ -12,19 +15,30 @@
     padding: 0 5rem;
     color: white;
     gap: 1.275rem;
+    @media screen and (max-width: 680px) {
+      padding: 0 3rem;
+    }
     .sumo-introduction-title-box {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       .sumo-introduction-title {
-
+       text-align: center;
       }
       .s-i-title1 {
         font-size: 3rem;
       }
       .s-i-title2 {
         font-size: 2.25rem;
+      }
+      @media screen and (max-width: 680px) {
+        .s-i-title1 {
+          font-size: 2.535rem;
+        }
+        .s-i-title2 {
+          font-size: 1.75rem;
+        }
       }
     }
     .sumo-introduction-main-text {
@@ -37,6 +51,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
+    @media screen and (max-width: 680px) {
+      justify-content: center;
+    }
     .sumo-introduction-block-img-box {
       position: relative;
       width: 80%;
