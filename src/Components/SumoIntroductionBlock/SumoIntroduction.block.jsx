@@ -20,7 +20,7 @@ function SumoIntroductionBlock(props) {
       </div>
       <div className="sumo-introduction-block-img-wrapper">
         <div className={`sumo-introduction-block-img-box`}>
-          <img src="./robot-fighting-3.png" alt="robot fight image"/>
+          <img src="robot-fighting-3.png" alt="robot fight image"/>
           <div className={`sumo-introduction-img-shadow`}/>
         </div>
       </div>
