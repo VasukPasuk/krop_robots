@@ -1,0 +1,47 @@
+@import '../../style/_colors.scss';
+@import '../../style/_variables.scss';
+
+.footer-block {
+  display: grid;
+  grid-template:  60% auto / 100%;
+  footer {
+    background: $bg-gray-900;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    .contact-icons-container {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      a {
+        .contact-icon {
+          font-size: 2.225rem;
+          background: $bg-gray-700;
+          box-shadow: 2px 2px 2px $bg-gray-500;
+          padding: 0.25rem;
+          border-radius: 0.35rem;
+          cursor: pointer;
+          color: white;
+          transition: all 0.25s ease;
+        }
+        .contact-icon:hover {
+          background: $bg-gray-600;
+          transform: scale(1.2);
+        }
+      }
+    }
+    #location-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $bg-gray-300;
+    }
+    hr {
+      width: 40%;
+      border: 1px solid $bg-gray-800;
+    }
+  }
+}
