@@ -1,0 +1,43 @@
+@import '../../style/_colors.scss';
+@import '../../style/_variables.scss';
+
+.sumo-zones-block {
+  display: grid;
+  grid-template: auto 95% / 100%;
+  color: white;
+  .sumo-zones-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      padding: 0.5rem 1.25rem;
+      background: #FF5C00;
+      border-radius: 4px;
+      box-shadow: 0 0 15px 5px #FF5C00;
+    }
+  }
+  .sumo-zones-cards-wrapper {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    @media screen and (max-width: 680px) {
+      grid-template: repeat(6, 1fr) / 100%;
+      padding: 2rem;
+    }
+    padding: 2rem 12rem;
+    gap: 2rem;
+    .sumo-zones-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 8px;
+      background: #382C2C;
+      padding: 1rem 2rem;
+      @media screen and (max-width: 680px) {
+        padding: 1rem 3rem;
+      }
+      box-shadow: 2px 2px 0 1px rgba(255, 255, 255, 0.25);
+    }
+  }
+}

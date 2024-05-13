@@ -18,7 +18,6 @@ function Layout(props) {
         <SumoZonesBlock/>
         <SumoStagesBlock/>
         <FooterBlock/>
-        
       </main>
       <ScrollToTopButton/>
     </>

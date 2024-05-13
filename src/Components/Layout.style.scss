@@ -3,9 +3,8 @@
 
 #main-content-wrapper {
   position: relative;
-  width: 100%;
   display: grid;
-  grid-auto-rows: 100vh;
+  grid-auto-rows: minmax(100vh, 200vh);
   grid-auto-columns: 100vw;
   overflow-x: hidden;
   background: $bg-color;

@@ -3,10 +3,11 @@ import './ScrollTopButton.style.scss';
 import {FaArrowUp} from "react-icons/fa6";
 
 const ScrollToTopButton = () => {
-  const [showButton, setShowButton] = useState(true); // Изменено на false
+  const [showButton, setShowButton] = useState(false);
   
-  const scrollFn = () => {
-    if (window.scrollY > 500) {
+  const scrollFn = (event) => {
+    console.log(event)
+    if (event.pageY > 268) {
       setShowButton(true);
     } else {
       setShowButton(false);
@@ -14,21 +15,25 @@ const ScrollToTopButton = () => {
   };
   
   useEffect(() => {
-    window.addEventListener('scroll', scrollFn);
+    document.addEventListener('wheel', scrollFn);
     return () => {
-      window.removeEventListener('scroll', scrollFn);
+      document.removeEventListener('wheel', scrollFn);
     };
   }, []);
   
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   };
   
-  return showButton ? (
-    <button id={`scroll-to-top-button`} onClick={scrollToTop}>
+  return (
+    <button
+      id={`scroll-to-top-button`}
+      className={`${showButton && `visible`}`}
+      onClick={scrollToTop}
+    >
       <FaArrowUp id={`scroll-to-icon`}/>
     </button>
-  ) : null; // Изменено на null
+  )
 };
 
 export default ScrollToTopButton;
