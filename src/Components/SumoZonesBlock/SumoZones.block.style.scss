@@ -13,7 +13,8 @@
       padding: 0.5rem 1.25rem;
       background: #FF5C00;
       border-radius: 4px;
-      box-shadow: 0 0 15px 5px #FF5C00;
+      font-size: 1.5rem;
+      animation: title-pulsation 2s linear infinite;
     }
   }
   .sumo-zones-cards-wrapper {
@@ -38,6 +39,22 @@
         padding: 1rem 3rem;
       }
       box-shadow: 2px 2px 0 1px rgba(255, 255, 255, 0.25);
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.075);
+      }
     }
+  }
+}
+
+@keyframes title-pulsation {
+  0% {
+    box-shadow: 0 0 5px 5px #FF5C00;
+  }
+  50% {
+    box-shadow: 0 0 25px 5px #FF5C00;
+  }
+  100% {
+    box-shadow: 0 0 5px 5px #FF5C00;
   }
 }
