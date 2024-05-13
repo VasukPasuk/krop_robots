@@ -1,0 +1,63 @@
+@import '../../style/_colors.scss';
+@import '../../style/_variables.scss';
+
+.sumo-introduction-block {
+  display: grid;
+  grid-template: 100% / 50% auto;
+  .sumo-introduction-block-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    color: white;
+    gap: 1.275rem;
+    .sumo-introduction-title-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .sumo-introduction-title {
+
+      }
+      .s-i-title1 {
+        font-size: 3rem;
+      }
+      .s-i-title2 {
+        font-size: 2.25rem;
+      }
+    }
+    .sumo-introduction-main-text {
+      text-align: center;
+      font-weight: 300;
+    }
+  }
+
+  .sumo-introduction-block-img-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .sumo-introduction-block-img-box {
+      position: relative;
+      width: 80%;
+      height: 80%;
+      img {
+        width: 100%;
+        height: 100%;
+        //transition: transform 0.325s ease;
+        //&:hover {
+        //  transform: scale(1.1);
+        //}
+      }
+    }
+    .sumo-introduction-img-shadow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.375);
+      z-index: 15;
+    }
+  }
+}
