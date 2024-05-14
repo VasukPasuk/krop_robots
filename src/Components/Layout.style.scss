@@ -1,11 +1,11 @@
 @import "../style/_colors.scss";
 @import "../style/_variables.scss";
 
-#main-content-wrapper {
-  position: relative;
-  display: grid;
-  grid-auto-rows: minmax(100vh, 500vh);
-  grid-auto-columns: 100vw;
-  overflow-x: hidden;
-  background: $bg-color;
-}
+//#main-content-wrapper {
+//  position: relative;
+//  display: grid;
+//  grid-auto-rows: minmax(100vh, 500vh);
+//  grid-auto-columns: 100vw;
+//  overflow-x: hidden;
+//  background: $bg-color;
+//}

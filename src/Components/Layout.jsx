@@ -11,17 +11,14 @@ import ScrollToTopButton from "./ScrollTopButton/ScrollTopButton";
 function Layout(props) {
   return (
     <>
-      <main id={`main-content-wrapper`}>
-        <IntroductionBlock/>
-        <CarouselBlock/>
-        <SumoIntroductionBlock/>
-        <SumoZonesBlock/>
-        <SumoStagesBlock/>
-        <FooterBlock/>
-      </main>
-      {/*<ScrollToTopButton/>*/}
+      <IntroductionBlock/>
+      <CarouselBlock/>
+      <SumoIntroductionBlock/>
+      <SumoZonesBlock/>
+      <SumoStagesBlock/>
+      <FooterBlock/>
+      <ScrollToTopButton/>
     </>
-  
   );
 }
 

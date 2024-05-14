@@ -4,7 +4,7 @@
 #carousel-block {
   position: relative;
   display: grid;
-  grid-template: 100% / 50% auto;
+  grid-template: 100% / 60% auto;
   @media screen and (max-width: 760px) {
     grid-template: 80% auto / 100%;
   }
@@ -19,7 +19,11 @@
     .images-wrapper {
       position: relative;
       width: 80%;
-      height: 80%;
+      height: 50%;
+      @media screen and (max-width: 760px){
+        width: 80%;
+        height: 70%;
+      }
       overflow: hidden;
       border-radius: 0.25rem;
       user-select: none;
@@ -102,10 +106,9 @@
         justify-content: center;
         align-items: center;
         gap: 1.25rem;
-        padding-left: 1.5rem;
-        //@media screen and (max-width: 760px){
-        //  padding-left: 1.5rem;
-        //}
+        @media screen and (max-width: 760px){
+          padding-left: 1.5rem;
+        }
         .tag-icon-box {
           display: flex;
           justify-content: center;
