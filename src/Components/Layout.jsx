@@ -7,7 +7,7 @@ import SumoZonesBlock from "./SumoZonesBlock/SumoZones.block";
 import SumoStagesBlock from "./SumoStagesBlock/SumoStages.block";
 import FooterBlock from "./FooterBlock/Footer.block";
 import ScrollToTopButton from "./ScrollTopButton/ScrollTopButton";
-
+import {ToastContainer} from "react-toastify";
 function Layout(props) {
   return (
     <>
@@ -18,6 +18,7 @@ function Layout(props) {
       <SumoStagesBlock/>
       <FooterBlock/>
       <ScrollToTopButton/>
+      <ToastContainer limit={1}/>
     </>
   );
 }

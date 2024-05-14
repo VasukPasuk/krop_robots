@@ -1,21 +1,28 @@
 import React, {useState} from 'react';
 import './Introduction.block.style.scss';
-import {link_names} from "../../constants/.names";
+import {link_names, WARN_MASSAGE_TEXT} from "../../constants/.names";
 import Logo from "../../icons/Logo";
 import {RxHamburgerMenu} from "react-icons/rx";
 import ScrollToTopButton from "../ScrollTopButton/ScrollTopButton";
-import { toast, ToastContainer } from 'react-toastify';
+import { toast, ToastContainer, Bounce } from 'react-toastify';
 function IntroductionBlock(props) {
   const [visibility, setVisibility] = useState(false);
-  const notify = () => toast('🦄 Wow so easy!', {
+  const notify = () => toast.warn(WARN_MASSAGE_TEXT, {
     position: "bottom-left",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    transition: Bounce,
   });
   return (
     <>
       <section id={`introduction-block`}>
         <header>
           <div className={`logo-container`}>
-            {/*<img src="./logo_without_text_black.png" width={64} height={64} alt="krop_robots logo"/>*/}
             <Logo/>
             <img src="./text_black.png" width={50} height={50} alt="krop_robots logo-text"/>
           </div>
@@ -39,9 +46,6 @@ function IntroductionBlock(props) {
           <img src="./main-image.jpg" alt=""/>
         </div>
       </section>
-      <div style={{position: 'absolute', top:0, left:0, width: '100vw', height: '100vh'}}>
-        <ToastContainer/>
-      </div>
     </>
   
   );
