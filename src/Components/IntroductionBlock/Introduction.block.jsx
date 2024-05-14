@@ -27,13 +27,17 @@ function IntroductionBlock(props) {
             <img src="./text_black.png" width={50} height={50} alt="krop_robots logo-text"/>
           </div>
           <ul className={`links-wrapper ${visibility ? 'links-wrapper__show' : 'links-wrapper__hide'}`}>
-            {link_names.map((name, index) => {
-              return (
-                <li key={name} className={`link-item l-i-${index + 1}`}>
-                  {index === 1 ? (<a href="#" onClick={notify}> {name} </a>) : (<a href="#"> {name} </a>)}
-                </li>
-              )
-            })}
+            {link_names.map((name, index) => (
+              <li
+                key={name}
+                onClick={index === 1 ? notify : undefined}
+                className={`link-item l-i-${index + 1}`}
+              >
+                <a href="#">
+                  {name}
+                </a>
+              </li>
+            ))}
           </ul>
           <RxHamburgerMenu
             className={`hamburger-menu`}
