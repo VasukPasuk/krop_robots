@@ -22,7 +22,7 @@
       align-items: center;
       gap: 0.5rem;
       width: 75%;
-      font-size: 2.7225rem;
+      font-size: clamp(1.25rem, 5vw, 2.25rem);
       font-family: "Tomorrow", sans-serif;
       font-weight: 500;
       color: #FFC300;
