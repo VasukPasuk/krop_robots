@@ -20,9 +20,13 @@
     color: white;
     width: 65%;
     .sanctions-block__content-wrapper__title-box {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       padding: 1rem 0.5rem;
       font-weight: 400;
       font-size: 2.225rem;
+      color: #99AA99;
     }
     .sanctions-block__content-wrapper__text-blocks-wrapper {
       display: grid;

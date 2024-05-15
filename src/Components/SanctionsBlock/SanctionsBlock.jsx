@@ -1,12 +1,14 @@
 import React from 'react';
 import './SanctionsBlock.style.scss';
+import {TbCookieOff} from "react-icons/tb";
 
 function SanctionsBlock(props) {
   return (
     <section className={`sanctions-block`}>
       <div className={`sanctions-block__content-wrapper`}>
         <h1 className={`sanctions-block__content-wrapper__title-box`}>
-          Штрафні санкції
+          <TbCookieOff />
+          <span>Штрафні санкції</span>
         </h1>
         <ul className={`sanctions-block__content-wrapper__text-blocks-wrapper`}>
           <li className={`text-blocks-wrapper__text-block text-block-i-1`}>

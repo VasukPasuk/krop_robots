@@ -1,13 +1,15 @@
 import React from 'react';
 import './TimeToRepair.style.scss';
 import { TiArrowSortedDown } from "react-icons/ti";
+import {PiGearBold} from "react-icons/pi";
 
 function TimeToRepair(props) {
   return (
     <section className={`time-to-repair-block`}>
       <div className={`time-to-repair-block__text-block`}>
         <h1 className={`time-to-repair-block__text-block__title-box`}>
-          Технічні перерви
+          <PiGearBold id={`gear-icon`}/>
+          <span>Технічні перерви</span>
         </h1>
         <div className={`time-to-repair-block__text-block__subtitle-box`}>
           <TiArrowSortedDown id="arrow-down-icon"/>
