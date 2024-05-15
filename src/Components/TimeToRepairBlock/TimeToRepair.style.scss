@@ -6,6 +6,7 @@
   grid-template: 100% / 55% auto;
   @media screen and (max-width: 768px) {
     grid-template:  55% auto / 100%;
+    gap: 2rem;
   }
   .time-to-repair-block__text-block {
     position: relative;

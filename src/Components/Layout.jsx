@@ -19,7 +19,7 @@ function Layout(props) {
       <CarouselBlock/>
       <SumoIntroductionBlock/>
       <SumoZonesBlock/>
-      <SumoStagesBlock/>
+      {/*<SumoStagesBlock/>*/}
       <TimeToRepair/>
       <SanctionsBlock/>
       {/* --------> MAIN CONTENT <-------- */}
