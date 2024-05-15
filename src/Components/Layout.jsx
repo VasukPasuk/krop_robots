@@ -9,6 +9,7 @@ import FooterBlock from "./FooterBlock/Footer.block";
 import ScrollToTopButton from "./ScrollTopButton/ScrollTopButton";
 import {ToastContainer} from "react-toastify";
 import TimeToRepair from "./TimeToRepairBlock/TimeToRepair";
+import SanctionsBlock from "./SanctionsBlock/SanctionsBlock";
 
 function Layout(props) {
   return (
@@ -20,6 +21,7 @@ function Layout(props) {
       <SumoZonesBlock/>
       <SumoStagesBlock/>
       <TimeToRepair/>
+      <SanctionsBlock/>
       {/* --------> MAIN CONTENT <-------- */}
       
       {/* --------> FOOTER <-------- */}
