@@ -8,17 +8,28 @@ import SumoStagesBlock from "./SumoStagesBlock/SumoStages.block";
 import FooterBlock from "./FooterBlock/Footer.block";
 import ScrollToTopButton from "./ScrollTopButton/ScrollTopButton";
 import {ToastContainer} from "react-toastify";
+import TimeToRepair from "./TimeToRepairBlock/TimeToRepair";
+
 function Layout(props) {
   return (
     <>
+      {/* --------> MAIN CONTENT <-------- */}
       <IntroductionBlock/>
       <CarouselBlock/>
       <SumoIntroductionBlock/>
       <SumoZonesBlock/>
       <SumoStagesBlock/>
+      <TimeToRepair/>
+      {/* --------> MAIN CONTENT <-------- */}
+      
+      {/* --------> FOOTER <-------- */}
       <FooterBlock/>
+      {/* --------> FOOTER <-------- */}
+      
+      {/* --------> HELPER FEATURES <-------- */}
       <ScrollToTopButton/>
       <ToastContainer limit={1}/>
+      {/* --------> HELPER FEATURES <-------- */}
     </>
   );
 }
