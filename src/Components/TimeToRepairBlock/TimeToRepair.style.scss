@@ -10,6 +10,7 @@
     margin-top: 2rem;
   }
   .time-to-repair-block__text-block {
+    container-type: inline-size;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,28 +18,36 @@
     align-items: center;
     color: $bg-gray-100;
     gap: 0.725rem;
+
     .time-to-repair-block__text-block__title-box {
       display: flex;
       justify-content: left;
       align-items: center;
       gap: 0.5rem;
       width: 75%;
-      font-size: clamp(1.5rem, 5vw, 2.25rem);
+      font-size: clamp(1.55rem, 5vw, 2.25rem);
       font-family: "Tomorrow", sans-serif;
       font-weight: 500;
       color: #FFC300;
+      @container (width <= 460px) {
+        width: 95%;
+      }
       #gear-icon {
         animation: gear-rotation 15s linear infinite;
       }
     }
+
     .time-to-repair-block__text-block__subtitle-box {
       width: 75%;
       display: flex;
       justify-content: left;
       align-items: center;
-      font-size: clamp(1.25rem, 5vw, 1.75rem);
+      font-size: clamp(1rem, 5vw, 1.75rem);
       gap: 0.5rem;
       color: lightskyblue;
+      @container (width <= 460px) {
+        width: 95%;
+      }
       #arrow-down-icon {
         font-size: 2rem;
       }
