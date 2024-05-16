@@ -13,10 +13,23 @@ function Logo() {
         </clipPath>
       </defs>
       <g transform="matrix(1.33333 0 0 -1.33333 0 85.333)">
+        <g transform="translate(50.234 6.26)">
+          <path
+            fill="white"
+            stroke="white"
+            strokeDasharray="none"
+            strokeLinecap="butt"
+            strokeLinejoin="miter"
+            strokeMiterlimit="10"
+            strokeOpacity="1"
+            strokeWidth="1"
+            d="M0 0c.09.01.18.08.22.17L12.2 25.29l-.07.14L.22 51.31c-.05.11-.16.18-.28.18h-48.36c-.23 0-.37-.24-.28-.44l11.99-25.18c.04-.08.04-.18 0-.26l-.14-.3v-.01L-48.7.43c-.09-.2.05-.44.28-.44H-.06c.02 0 .04 0 .06.01"
+          ></path>
+        </g>
         <g transform="translate(26.549 57.75)">
           <path
             fill="none"
-            stroke="#000"
+            stroke="#FF7A2F"
             strokeDasharray="none"
             strokeLinecap="butt"
             strokeLinejoin="miter"
@@ -29,7 +42,7 @@ function Logo() {
         <g transform="translate(10.908 39.664)">
           <path
             fill="none"
-            stroke="#000"
+            stroke="#FF7A2F"
             strokeDasharray="none"
             strokeLinecap="butt"
             strokeLinejoin="miter"
@@ -44,7 +57,7 @@ function Logo() {
             <g transform="translate(26.236 30.835)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -57,7 +70,7 @@ function Logo() {
             <g transform="translate(23.906 31.08)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -70,7 +83,7 @@ function Logo() {
             <g transform="translate(21.956 40.767)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -83,7 +96,7 @@ function Logo() {
             <g transform="translate(27.168 39.517)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -96,7 +109,7 @@ function Logo() {
             <g transform="translate(25.555 6.25)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -109,7 +122,7 @@ function Logo() {
             <g transform="translate(37.302 10.235)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -122,7 +135,7 @@ function Logo() {
             <g transform="translate(15.053 17.592)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -135,7 +148,7 @@ function Logo() {
             <g transform="translate(32.367 51.926)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -148,7 +161,7 @@ function Logo() {
             <g transform="translate(28.418 52.674)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -160,7 +173,7 @@ function Logo() {
             </g>
             <g transform="translate(43.437 49.78)">
               <path
-                fill="#000"
+                fill="#FF7A2F"
                 fillOpacity="1"
                 fillRule="nonzero"
                 stroke="none"
@@ -170,7 +183,7 @@ function Logo() {
             <g transform="translate(43.437 49.78)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -183,7 +196,7 @@ function Logo() {
             <g transform="translate(62.494 31.69)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -196,7 +209,7 @@ function Logo() {
             <g transform="translate(45.548 40.958)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -209,7 +222,7 @@ function Logo() {
             <g transform="translate(51.986 40.958)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -222,7 +235,7 @@ function Logo() {
             <g transform="translate(51.373 43.342)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -235,7 +248,7 @@ function Logo() {
             <g transform="translate(48.92 37.285)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -248,7 +261,7 @@ function Logo() {
             <g transform="translate(24.668 49.105)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -261,7 +274,7 @@ function Logo() {
             <g transform="translate(45.855 50.7)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -274,7 +287,7 @@ function Logo() {
             <g transform="translate(62.494 31.69)">
               <path
                 fill="none"
-                stroke="#000"
+                stroke="#FF7A2F"
                 strokeDasharray="none"
                 strokeLinecap="butt"
                 strokeLinejoin="miter"
@@ -282,19 +295,6 @@ function Logo() {
                 strokeOpacity="1"
                 strokeWidth="1"
                 d="M0 0l-.06-.14"
-              ></path>
-            </g>
-            <g transform="translate(50.234 6.26)">
-              <path
-                fill="none"
-                stroke="#000"
-                strokeDasharray="none"
-                strokeLinecap="butt"
-                strokeLinejoin="miter"
-                strokeMiterlimit="10"
-                strokeOpacity="1"
-                strokeWidth="1"
-                d="M0 0c.09.01.18.08.22.17L12.2 25.29l-.07.14L.22 51.31c-.05.11-.16.18-.28.18h-48.36c-.23 0-.37-.24-.28-.44l11.99-25.18c.04-.08.04-.18 0-.26l-.14-.3v-.01L-48.7.43c-.09-.2.05-.44.28-.44H-.06c.02 0 .04 0 .06.01"
               ></path>
             </g>
           </g>

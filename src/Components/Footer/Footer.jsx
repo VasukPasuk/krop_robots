@@ -1,17 +1,16 @@
 import React from 'react';
-import  './Footer.block.style.scss';
-import {FaFacebookF, FaInstagram, FaTelegramPlane} from "react-icons/fa";
+import  './Footer.style.scss';
+import {FaFacebookF, FaInstagram, FaLink, FaTelegramPlane} from "react-icons/fa";
 import {FaMapLocationDot} from "react-icons/fa6";
+import {LuArrowBigDownDash} from "react-icons/lu";
+import {useLocation} from "react-router-dom";
 
-function FooterBlock(props) {
+function Footer(props) {
+  const location = useLocation();
+  const currentPath = location.pathname.replace('/','');
+  if (currentPath === 'robot-sumo-full') return
   return (
     <footer>
-      {/*<div id="location-text">*/}
-      {/*  <span>Місце проведення: м. Кропивницький, вул. Т. Шевченка 1, ЦДУ імені В. Винниченка,</span>*/}
-      {/*  <span> спортивна зала, семи  поверхового корпусу</span>*/}
-      {/*</div>*/}
-      {/*<div className="contact-icons-container">*/}
-      {/*</div>*/}
       <div className={`footer-top`}>
         <div className={`footer__location-container`}>
           <div className={`footer__location-block-title footer-block-title`}>
@@ -26,7 +25,8 @@ function FooterBlock(props) {
         </div>
         <div className={`footer__follow-container`}>
           <div className={`footer__follow-block-title footer-block-title`}>
-            Слідкуйте за нами
+            <span>Слідкуйте за нами</span>
+            <LuArrowBigDownDash />
           </div>
           <div className={`footer__follow-block-icons-box`}>
             <a
@@ -43,6 +43,18 @@ function FooterBlock(props) {
             </a>
           </div>
         </div>
+        <div className={`footer__register-container`}>
+          <div className={`footer__register-block-title footer-block-title`}>
+            <span>Реєстрація до змагань</span>
+            <LuArrowBigDownDash />
+          </div>
+          <div className={`footer__register-block-icons-box`}>
+            <a
+              href="https://forms.gle/visNrfF53YPETeLJ9">
+              <FaLink className={`link-icon`}/>
+            </a>
+          </div>
+        </div>
       </div>
       <div className={`footer-bottom`}>
         <div className={``}>
@@ -53,4 +65,4 @@ function FooterBlock(props) {
   );
 }
 
-export default FooterBlock;
+export default Footer;

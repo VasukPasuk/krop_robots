@@ -2,14 +2,9 @@
 @import '../../style/_variables.scss';
 
 footer {
-  margin-top: 1rem;
+  margin-top: 3rem;
   height: fit-content;
   background: $footer-bg-color;
-  //display: flex;
-  //flex-direction: column;
-  //gap: 1rem;
-  //justify-content: center;
-  //align-items: center;
   display: grid;
   grid-template: auto 10% / 100%;
   color: $bg-gray-200;
@@ -17,6 +12,7 @@ footer {
   gap: 4rem;
   @media screen and (max-width: 768px) {
     gap: 3rem;
+    padding: 1rem;
   }
   .footer-top {
     display: flex;
@@ -42,9 +38,17 @@ footer {
       gap: 0.5rem;
 
       .footer__location-block-title {
+        display: flex;
+        flex-direction: row;
         gap: 1rem;
+        @media screen and (width < 480px){
+          gap: 0.5rem;
+        }
         .footer__location-block-icon {
           font-size: 1.745rem;
+          //@media screen and (width < 480px){
+          //  font-size: 1.21745rem;
+          //}
         }
       }
 
@@ -64,7 +68,10 @@ footer {
       gap: 0.5rem;
 
       .footer__follow-block-title {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
         .footer__location-block-icon {
 
         }
@@ -94,6 +101,42 @@ footer {
         }
       }
     }
+    .footer__register-container {
+      height: 100%;
+      padding: 2rem 2rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .footer__register-block-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+      }
+      .footer__register-block-icons-box {
+        display: flex;
+        flex-direction: row;
+        gap: 1.75rem;
+
+        a {
+          .link-icon {
+            font-size: 2.225rem;
+            background: $bg-gray-700;
+            box-shadow: 2px 2px 2px $bg-gray-500;
+            padding: 0.25rem;
+            border-radius: 0.35rem;
+            cursor: pointer;
+            color: white;
+            transition: all 0.25s ease;
+          }
+
+          .link-icon:hover {
+            background: $bg-gray-600;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
   }
 
   .footer-bottom {
@@ -101,23 +144,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-
-  //.contact-icons-container {
-  //  display: flex;
-  //  flex-direction: row;
-  //  gap: 2rem;
-  //}
-  //#location-text {
-  //  display: flex;
-  //  flex-direction: column;
-  //  justify-content: center;
-  //  align-items: center;
-  //  color: $bg-gray-300;
-  //}
-  //hr {
-  //  width: 40%;
-  //  border: 1px solid $bg-gray-800;
-  //}
 }
 
 .footer-block-title {

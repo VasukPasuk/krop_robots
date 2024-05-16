@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Carousel.block.style.scss';
-import {CAROUSEL_LENGTH, IMAGE_SWITCHING_DURATION} from "../../constants/.names";
 import {FaArrowLeft, FaArrowRight, FaBookReader, FaBriefcase, FaRobot} from "react-icons/fa";
+import {CAROUSEL_LENGTH, IMAGE_SWITCHING_DURATION} from "../../../constants/.names";
 
 function CarouselBlock(props) {
   const [currentImage, setCurrentImage] = useState(0);
