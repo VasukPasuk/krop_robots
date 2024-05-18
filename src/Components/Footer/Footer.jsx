@@ -30,28 +30,19 @@ function Footer(props) {
           </div>
           <div className={`footer__follow-block-icons-box`}>
             <a
-              href="https://www.google.com/url?q=https%3A%2F%2Ft.me%2Fkrop_robots&sa=D&sntz=1&usg=AOvVaw3vUQ9H8GIBWV7TCiHrGLfF">
-              <FaInstagram className="contact-icon"/>
-            </a>
-            <a
+              target="_self"
               href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fkrop_robots%2F%3Figsh%3DNXN4d291ZHJ0eng2&sa=D&sntz=1&usg=AOvVaw0SKUxLed1eq-zOiMNcSOr8">
-              <FaTelegramPlane className="contact-icon"/>
+              <FaInstagram id="instagram-icon" className="contact-icon"/>
             </a>
             <a
+              target="_self"
+              href="https://www.google.com/url?q=https%3A%2F%2Ft.me%2Fkrop_robots&sa=D&sntz=1&usg=AOvVaw3vUQ9H8GIBWV7TCiHrGLfF">
+              <FaTelegramPlane id="telegram-icon" className="contact-icon"/>
+            </a>
+            <a
+              target="_self"
               href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1301857734041287&sa=D&sntz=1&usg=AOvVaw1QOR1v6JxQrRJhz9S8lnt_">
-              <FaFacebookF className="contact-icon"/>
-            </a>
-          </div>
-        </div>
-        <div className={`footer__register-container`}>
-          <div className={`footer__register-block-title footer-block-title`}>
-            <span>Реєстрація до змагань</span>
-            <LuArrowBigDownDash />
-          </div>
-          <div className={`footer__register-block-icons-box`}>
-            <a
-              href="https://forms.gle/visNrfF53YPETeLJ9">
-              <FaLink className={`link-icon`}/>
+              <FaFacebookF id="facebook-icon" className="contact-icon"/>
             </a>
           </div>
         </div>

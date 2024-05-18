@@ -32,8 +32,6 @@ footer {
       @media screen and (max-width: 768px) {
         padding: 2rem 2rem 0 2rem;
       }
-      //justify-content: center;
-      //align-items: center;
       flex-direction: column;
       gap: 0.5rem;
 
@@ -46,9 +44,6 @@ footer {
         }
         .footer__location-block-icon {
           font-size: 1.745rem;
-          //@media screen and (width < 480px){
-          //  font-size: 1.21745rem;
-          //}
         }
       }
 
@@ -61,8 +56,6 @@ footer {
     .footer__follow-container {
       height: 100%;
       padding: 2rem 2rem 0 2rem;
-      //justify-content: center;
-      //align-items: center;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -85,8 +78,6 @@ footer {
         a {
           .contact-icon {
             font-size: 2.225rem;
-            background: $bg-gray-700;
-            box-shadow: 2px 2px 2px $bg-gray-500;
             padding: 0.25rem;
             border-radius: 0.35rem;
             cursor: pointer;
@@ -96,8 +87,16 @@ footer {
 
           .contact-icon:hover {
             background: $bg-gray-600;
-            transform: scale(1.2);
           }
+        }
+        #instagram-icon {
+          background: linear-gradient(45deg, $bg-orange-300, $bg-red-600, $bg-blue-700);
+        }
+        #telegram-icon {
+          background: $bg-blue-500;
+        }
+        #facebook-icon {
+          background: $bg-blue-700;
         }
       }
     }

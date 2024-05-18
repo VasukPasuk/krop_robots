@@ -1,0 +1,41 @@
+@import './_colors.scss';
+@import './_variables.scss';
+
+@mixin top__and__bottom__darkening {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(0,0,0, 1), rgba(0, 0, 0, 0.5));
+    z-index: 5;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(0deg, rgba(0,0,0, 1), rgba(0, 0, 0, 0.5));
+    z-index: 5;
+  }
+}
+
+@mixin full__darkening {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.99),  rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.79), rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.75));
+    z-index: 100;
+  }
+}
+
+@mixin button__default-style {
+
+}

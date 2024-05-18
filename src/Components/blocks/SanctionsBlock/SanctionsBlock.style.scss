@@ -1,5 +1,6 @@
 @import '../../../style/_colors.scss';
 @import '../../../style/_variables.scss';
+@import '../../../style/_mixins.scss';
 
 @mixin shadow-text-block($main-color) {
   .text-blocks-wrapper__text-block__subtitle-box {
@@ -21,26 +22,7 @@
     object-fit: cover;
     object-position: center;
   }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(rgba(0,0,0, 1), rgba(0, 0, 0, 0.75));
-    z-index: 5;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(0deg, rgba(0,0,0, 1), rgba(0, 0, 0, 0.75));
-    z-index: 5;
-  }
+  @include top__and__bottom__darkening;
 
   .sanctions-block__content-wrapper {
     z-index: 10;

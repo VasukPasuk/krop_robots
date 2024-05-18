@@ -1,15 +1,24 @@
 @import './_colors.scss';
 $logo-size: 64px;
 $gb-font-size: 16px;
-$bg-color: rgb(0,0,0);
+
+/* [body variables] */
+
+$body-bg-color: rgb(0, 0, 0);;
 
 /* [thumber variables] */
 
+
+
 /* [header variables] */
 $header-height: 64px;
-$header-bg-color: red;
+$header-bg-color: #FF7A2F;
 $header-link-color: rgb(0,0,0);
+$header-gap: 1rem;
 
+/* [right-menu variables] */
+$right-menu-width: 25%;
+$right-menu-color: #f1f1f1;
 /* [carousel variables] */
 $circle-size: 12.5px;
 $active-circle-scale: 1.2;
