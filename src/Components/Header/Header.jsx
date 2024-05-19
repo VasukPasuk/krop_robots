@@ -12,9 +12,9 @@ import {AiFillSetting} from "react-icons/ai";
 
 import {DropdownItem, DropdownList} from "../ui/DropdownList/DropdownList";
 import useNotify from "../../hooks/useNotify";
-import {TbMenuDeep} from "react-icons/tb";
 import Menu from "../ui/Menu/Menu";
 import {MdOutlineLanguage} from "react-icons/md";
+import {RxHamburgerMenu} from "react-icons/rx";
 
 function Header(props) {
   const [currentMenu, setCurrentMenu] = useState(0)
@@ -57,19 +57,11 @@ function Header(props) {
             </NavLink>
           </li>
         </ul>
-        <ul className={`header-tools-container`}>
-          <li className={`header-tools-container__menu-button`} onClick={openMenuHandler(1)}>
-            <span>
-              Змагання
-            </span>
-            <TbMenuDeep id={"header-tools-container__menu-icon"}/>
-          </li>
-        </ul>
         
-        {/*<RxHamburgerMenu*/}
-        {/*  className={`hamburger-menu`}*/}
-        {/*  onClick={() => setVisibility(prev => !prev)}*/}
-        {/*/>*/}
+        <RxHamburgerMenu
+          className={`hamburger-menu`}
+          onClick={openMenuHandler(1)}
+        />
         <AiFillSetting id="settings-icon" onClick={openMenuHandler(2)}/>
       </div>
       
@@ -101,7 +93,7 @@ function Header(props) {
           <DropdownItem
             isLink={false}
           >
-            <span>UK</span>
+            <span>ENG</span>
           </DropdownItem>
           <DropdownItem
             isLink={false}
