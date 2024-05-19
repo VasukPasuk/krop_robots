@@ -8,13 +8,17 @@ $body-bg-color: rgb(0, 0, 0);;
 
 /* [thumber variables] */
 
-
+/* [darkening-stage variables] */
+$sanctions-block-image-darkening: 0.8;
+$repairing-block-image-darkening: 0.5;
 
 /* [header variables] */
 $header-height: 64px;
 $header-bg-color: #FF7A2F;
 $header-link-color: rgb(0,0,0);
 $header-gap: 1rem;
+$padding-left: 2rem;
+$padding-right: 1rem;
 
 /* [right-menu variables] */
 $right-menu-width: 25%;

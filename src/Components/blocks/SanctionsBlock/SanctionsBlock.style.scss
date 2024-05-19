@@ -22,7 +22,7 @@
     object-fit: cover;
     object-position: center;
   }
-  @include top__and__bottom__darkening;
+  @include top__and__bottom__darkening($sanctions-block-image-darkening);
 
   .sanctions-block__content-wrapper {
     z-index: 10;

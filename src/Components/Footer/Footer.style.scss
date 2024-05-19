@@ -84,10 +84,6 @@ footer {
             color: white;
             transition: all 0.25s ease;
           }
-
-          .contact-icon:hover {
-            background: $bg-gray-600;
-          }
         }
         #instagram-icon {
           background: linear-gradient(45deg, $bg-orange-300, $bg-red-600, $bg-blue-700);
@@ -98,41 +94,9 @@ footer {
         #facebook-icon {
           background: $bg-blue-700;
         }
-      }
-    }
-    .footer__register-container {
-      height: 100%;
-      padding: 2rem 2rem 0 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      .footer__register-block-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.25rem;
-      }
-      .footer__register-block-icons-box {
-        display: flex;
-        flex-direction: row;
-        gap: 1.75rem;
-
-        a {
-          .link-icon {
-            font-size: 2.225rem;
-            background: $bg-gray-700;
-            box-shadow: 2px 2px 2px $bg-gray-500;
-            padding: 0.25rem;
-            border-radius: 0.35rem;
-            cursor: pointer;
-            color: white;
-            transition: all 0.25s ease;
-          }
-
-          .link-icon:hover {
-            background: $bg-gray-600;
-            transform: scale(1.2);
-          }
+        #youtube-icon {
+          background: white;
+          color: $bg-red-600;
         }
       }
     }

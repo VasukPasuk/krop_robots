@@ -1,9 +1,10 @@
 import React from 'react';
 import  './Footer.style.scss';
-import {FaFacebookF, FaInstagram, FaLink, FaTelegramPlane} from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaLink, FaTelegramPlane, FaYoutube} from "react-icons/fa";
 import {FaMapLocationDot} from "react-icons/fa6";
 import {LuArrowBigDownDash} from "react-icons/lu";
 import {useLocation} from "react-router-dom";
+import {FOLLOW_LINKS} from "../../constants/.names";
 
 function Footer(props) {
   const location = useLocation();
@@ -31,25 +32,30 @@ function Footer(props) {
           <div className={`footer__follow-block-icons-box`}>
             <a
               target="_self"
-              href="https://www.google.com/url?q=https%3A%2F%2Fwww.instagram.com%2Fkrop_robots%2F%3Figsh%3DNXN4d291ZHJ0eng2&sa=D&sntz=1&usg=AOvVaw0SKUxLed1eq-zOiMNcSOr8">
+              href={FOLLOW_LINKS.INSTAGRAM_FOLLOW_LINK}>
               <FaInstagram id="instagram-icon" className="contact-icon"/>
             </a>
             <a
               target="_self"
-              href="https://www.google.com/url?q=https%3A%2F%2Ft.me%2Fkrop_robots&sa=D&sntz=1&usg=AOvVaw3vUQ9H8GIBWV7TCiHrGLfF">
+              href={FOLLOW_LINKS.TELEGRAM_FOLLOW_LINK}>
               <FaTelegramPlane id="telegram-icon" className="contact-icon"/>
             </a>
             <a
               target="_self"
-              href="https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1301857734041287&sa=D&sntz=1&usg=AOvVaw1QOR1v6JxQrRJhz9S8lnt_">
+              href={FOLLOW_LINKS.FACEBOOK_FOLLOW_LINK}>
               <FaFacebookF id="facebook-icon" className="contact-icon"/>
+            </a>
+            <a
+              target="_self"
+              href={FOLLOW_LINKS.YOUTUBE_FOLLOW_LINK}>
+              <FaYoutube id="youtube-icon" className="contact-icon"/>
             </a>
           </div>
         </div>
       </div>
       <div className={`footer-bottom`}>
-        <div className={``}>
-          All rights reserved ©
+        <div>
+          © ГО "KROP ROBOTS"
         </div>
       </div>
     </footer>

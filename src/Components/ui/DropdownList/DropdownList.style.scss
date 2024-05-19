@@ -18,6 +18,16 @@
     //border-radius: 0.5rem 0 0 0.5rem;
     cursor: pointer;
     gap: 7rem;
+    .menu-title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      .title-container__icon {
+        font-size: 1.25rem;
+      }
+    }
     &:hover {
       background: $bg-gray-800;
     }
@@ -46,7 +56,7 @@
       display: flex;
     }
     .drop-down-element__content-box__option-item {
-      a {
+      a, div {
         width: 100%;
         height: 100%;
         display: flex;
@@ -54,7 +64,6 @@
         gap: 0.25rem;
         align-items: center;
         padding: 0.5rem 1.25rem;
-        //border-radius: 0.5rem 0 0 0.5rem;
         cursor: pointer;
         color: $right-menu-color;
         &:hover {

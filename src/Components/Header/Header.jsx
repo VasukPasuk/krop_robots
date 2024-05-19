@@ -14,6 +14,7 @@ import {DropdownItem, DropdownList} from "../ui/DropdownList/DropdownList";
 import useNotify from "../../hooks/useNotify";
 import {TbMenuDeep} from "react-icons/tb";
 import Menu from "../ui/Menu/Menu";
+import {MdOutlineLanguage} from "react-icons/md";
 
 function Header(props) {
   const [currentMenu, setCurrentMenu] = useState(0)
@@ -23,8 +24,8 @@ function Header(props) {
   const location = useLocation();
   const currentPath = location.pathname.replace('/','');
   
-  const SettingMenuRef = useClickAway(()=> alert(1));
-  const CompetitionsMenuRef = useClickAway(()=> setCurrentMenu(0));
+  // const SettingMenuRef = useClickAway(()=> setCurrentMenu(0));
+  // const CompetitionsMenuRef = useClickAway(()=> setCurrentMenu(0));
   
   const linkNavWarnMassageHandler = () => {
     shop_notify();
@@ -71,22 +72,8 @@ function Header(props) {
         {/*/>*/}
         <AiFillSetting id="settings-icon" onClick={openMenuHandler(2)}/>
       </div>
-      {/*<ul className={`links-wrapper ${visibility ? 'links-wrapper__show' : 'links-wrapper__hide'}`}>*/}
-      {/*  {HEADER_LINKS.map((anchor, index) => (*/}
-      {/*    <li*/}
-      {/*      key={anchor.link}*/}
-      {/*      onClick={index === 1 ? notify : undefined}*/}
-      {/*      className={`link-item l-i-${index + 1}`}*/}
-      {/*    >*/}
-      {/*      <NavLink to={anchor.link}>*/}
-      {/*        {anchor.name}*/}
-      {/*      </NavLink>*/}
-      {/*    </li>*/}
-      {/*  ))}*/}
-      {/*  */}
-      {/*</ul>*/}
       
-      <Menu ref={SettingMenuRef} isActive={currentMenu === 1}>
+      <Menu isActive={currentMenu === 1}>
         <DropdownList title={"Робо-сумо"}>
           <DropdownItem
             isLink={true}
@@ -103,8 +90,25 @@ function Header(props) {
           </DropdownItem>
         </DropdownList>
       </Menu>
-      <Menu ref={CompetitionsMenuRef} isActive={currentMenu === 2}>
-      
+      <Menu isActive={currentMenu === 2}>
+        <DropdownList
+          title={
+            <>
+              <span>Змінити мову </span>
+              <MdOutlineLanguage className="title-container__icon" />
+            </>
+        }>
+          <DropdownItem
+            isLink={false}
+          >
+            <span>UK</span>
+          </DropdownItem>
+          <DropdownItem
+            isLink={false}
+          >
+            <span>UA</span>
+          </DropdownItem>
+        </DropdownList>
       </Menu>
     </header>
   );

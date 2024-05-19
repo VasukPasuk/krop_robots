@@ -2,6 +2,25 @@ import React, {useEffect, useState} from 'react';
 import './Carousel.block.style.scss';
 import {FaArrowLeft, FaArrowRight, FaBookReader, FaBriefcase, FaRobot} from "react-icons/fa";
 import {CAROUSEL_LENGTH, IMAGE_SWITCHING_DURATION} from "../../../constants/.names";
+import {motion} from "framer-motion";
+
+
+const TAGS_DATA = [
+  {
+    text: "Проєкт Krop_Robots засновано в 2023 році, для популяризації STEM-освіти для молоді.",
+    icon: <FaBookReader className={`tag-icon`}/>
+  },
+  {
+    text: 'Сьогодні ми надаємо безкоштовні уроки, яких потребують роботодавці та сучасний бізнес - жодної сухої теорії та "Води".',
+    icon: <FaBriefcase className={`tag-icon`}/>
+  },
+  {
+    text: "Krop_Robots - це комфортне середовище, в якому ваші діти зможуть себе відчути справжніми робототехніками.",
+    icon: <FaRobot className={`tag-icon`}/>
+  }
+]
+
+
 
 function CarouselBlock(props) {
   const [currentImage, setCurrentImage] = useState(0);
@@ -19,7 +38,7 @@ function CarouselBlock(props) {
         <div className={`images-wrapper`}>
           <div
             className={`images-box`}
-            style={{transform: `translate(-${currentImage*100}%)`}}
+            style={{transform: `translate(-${currentImage * 100}%)`}}
           >
             {[...Array(CAROUSEL_LENGTH)].map((_, index) => (
                 <img
@@ -61,30 +80,23 @@ function CarouselBlock(props) {
       </div>
       <div className={`carousel-text-wrapper`}>
         <ul className={`tags-wrapper`}>
-          <li className={`tag-box tag-item1`}>
-            <div className={`tag-icon-box`}>
-              <FaBookReader className={`tag-icon`}/>
-            </div>
-            <div className={`tag-text`}>
-              Проєкт Krop_Robots засновано в 2023 році, для популяризації STEM-освіти для молоді.
-            </div>
-          </li>
-          <li className={`tag-box tag-item2`}>
-            <div className={`tag-icon-box`}>
-              <FaBriefcase className={`tag-icon`}/>
-            </div>
-            <div className={`tag-text`}>
-              Сьогодні ми надаємо безкоштовні уроки, яких потребують роботодавці та сучасний бізнес - жодної сухої теорії та "Води".
-            </div>
-          </li>
-          <li className={`tag-box tag-item3`}>
-            <div className={`tag-icon-box`}>
-              <FaRobot className={`tag-icon`}/>
-            </div>
-            <div className={`tag-text`}>
-              Krop_Robots - це комфортне середовище, в якому ваші діти зможуть себе відчути справжніми робототехніками.
-            </div>
-          </li>
+          {TAGS_DATA.map((tag, index) => (
+            <motion.li
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              viewport={{once: true}}
+              transition={{ease: 'easeIn', duration: 0.25, delay: index * 0.325}}
+            >
+              <li className={`tag-box tag-item${++index}`}>
+                <div className={`tag-icon-box`}>
+                  {tag.icon}
+                </div>
+                <div className={`tag-text`}>
+                  {tag.text}
+                </div>
+              </li>
+            </motion.li>
+          ))}
         </ul>
       </div>
     </section>

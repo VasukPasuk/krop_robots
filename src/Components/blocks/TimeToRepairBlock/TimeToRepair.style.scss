@@ -46,6 +46,7 @@
       font-size: clamp(1rem, 5vw, 1.75rem);
       gap: 0.5rem;
       color: lightskyblue;
+      padding-left: 1.25rem;
       @container (width <= 460px) {
         width: 95%;
       }
@@ -85,7 +86,7 @@
         transform: scale(1.1);
       }
     }
-    @include top__and__bottom__darkening;
+    @include top__and__bottom__darkening($repairing-block-image-darkening);
   }
 }
 

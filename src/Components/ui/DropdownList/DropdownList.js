@@ -12,7 +12,7 @@ function DropdownList({children, title}) {
           setActive(state => !state)
         }}
       >
-        <span className={`title-box`}>
+        <span className={`menu-title-container`}>
           {title}
         </span>
         <IoIosArrowUp
@@ -30,12 +30,17 @@ function DropdownList({children, title}) {
 
 function DropdownItem({children, isLink = false, onClick= undefined, isValid = false, href= "#"}) {
   return (
-    <li className={`drop-down-element__content-box__option-item`} onClick={onClick}>
+    <li className={`drop-down-element__content-box__option-item`} onClick={onClick || undefined }>
       {isLink && (
         <a target="_self" href={href}>
           <FaLink/>
           {children}
         </a>
+      )}
+      {!isLink && (
+        <div>
+          {children}
+        </div>
       )}
     </li>
   )

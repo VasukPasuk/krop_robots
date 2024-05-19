@@ -12,7 +12,6 @@ function TimeToRepair(props) {
           <span>Технічні перерви</span>
         </h1>
         <div className={`time-to-repair-block__text-block__subtitle-box`}>
-          <TiArrowSortedDown id="arrow-down-icon"/>
           <span>
             Технічні перерви між матчами
           </span>

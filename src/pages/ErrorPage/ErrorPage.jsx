@@ -6,7 +6,7 @@ import {AiFillHome} from "react-icons/ai";
 function ErrorPage(props) {
   return (
     <section id="error-page">
-      <img src="not-found-image.PNG" alt="not found image"/>
+      <img src="./not-found-image.PNG" alt="not found image"/>
       <p className="error-text-block">
         Сторінка не була знайдена
       </p>
