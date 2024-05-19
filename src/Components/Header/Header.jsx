@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import './Header.style.scss';
-import {useClickAway} from '@uidotdev/usehooks';
 import {
   KROP_ROBOTS_SHOP_WARN_MASSAGE_TEXT, REGISTER_ROBOT_SUMO_LINK,
   SUMO_COMPETITIONS_WARN_MASSAGE_TEXT
@@ -44,20 +43,10 @@ function Header(props) {
         <Logo/>
         <img src="text_white.png" width={50} height={50} alt="krop_robots logo-text"/>
       </div>
-      <div className={`links-and-tools-container`}>
-        <ul className={`header-links-container`}>
-          <li className={`header-link-box`} onClick={undefined}>
-            <NavLink to={`home`} className={`header-link`}>
-              Головна
-            </NavLink>
-          </li>
-          <li className={`header-link-box`} onClick={linkNavWarnMassageHandler}>
-            <NavLink to={`#`} className={`header-link`}>
-              Krop Robots Shop
-            </NavLink>
-          </li>
-        </ul>
-        
+      <div className={`tools-container`}>
+        <NavLink to={`#`} id={`krop-robots-shop-link`}>
+          Krop Robots Shop
+        </NavLink>
         <RxHamburgerMenu
           className={`hamburger-menu`}
           onClick={openMenuHandler(1)}

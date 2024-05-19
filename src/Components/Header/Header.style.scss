@@ -29,70 +29,28 @@ header {
     }
   }
 
-  .links-and-tools-container {
+  .tools-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: $header-gap;
-
-    .header-links-container {
-      display: flex;
-      gap: $header-gap;
-
-      .header-link-box {
-        overflow: hidden;
-
-        .header-link {
-          position: relative;
-          color: $header-link-color;
-
-          &::before {
-            position: absolute;
-            content: '';
-            width: 100%;
-            height: 2px;
-            background: #000;
-            bottom: 0;
-            right: 100%;
-            transition: right 0.5s ease;
-          }
-
-          &:hover::before {
-            right: 0;
-          }
-        }
-
-        &:nth-child(2) {
-          .header-link {
-            font-weight: 700;
-          }
-        }
+    #krop-robots-shop-link {
+      position: relative;
+      color: black;
+      overflow: hidden;
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        right: 100%;
+        transition: 0.5s ease right;
       }
-    }
-
-    .header-tools-container {
-      display: flex;
-      flex-direction: row;
-
-      .header-tools-container__menu-button {
-        display: flex;
-        flex-direction: row;
-        gap: 0.25rem;
-        align-items: center;
-        cursor: pointer;
-        transition: color 0.75s ease;
-        &:hover {
-          color: $bg-gray-700;
-          #header-tools-container__menu-icon {
-            color: $bg-gray-700;
-          }
-        }
-        #header-tools-container__menu-icon {
-          transition: color 0.75s ease;
-          font-size: 1.5rem;
-        }
+      &:hover::before {
+        right: 0;
       }
-
     }
 
     #settings-icon {
