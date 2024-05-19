@@ -36,6 +36,9 @@ header {
     justify-content: center;
     align-items: center;
     gap: $header-gap;
+    @media screen and (max-width: 480px) {
+      gap: 0.5rem;
+    }
     #krop-robots-shop-link {
       position: relative;
       color: black;
