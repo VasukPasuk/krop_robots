@@ -17,4 +17,7 @@
   &[data-active-menu="true"] {
     transform: translate(0%);
   }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 }
