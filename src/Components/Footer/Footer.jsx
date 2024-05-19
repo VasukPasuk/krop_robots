@@ -1,6 +1,6 @@
 import React from 'react';
 import  './Footer.style.scss';
-import {FaFacebookF, FaInstagram, FaLink, FaTelegramPlane, FaYoutube} from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaTelegramPlane, FaTiktok, FaYoutube} from "react-icons/fa";
 import {FaMapLocationDot} from "react-icons/fa6";
 import {LuArrowBigDownDash} from "react-icons/lu";
 import {useLocation} from "react-router-dom";
@@ -49,6 +49,11 @@ function Footer(props) {
               target="_self"
               href={FOLLOW_LINKS.YOUTUBE_FOLLOW_LINK}>
               <FaYoutube id="youtube-icon" className="contact-icon"/>
+            </a>
+            <a
+              target="_self"
+              href={FOLLOW_LINKS.TIKTOK_FOLLOW_LINK}>
+              <FaTiktok id="tiktok-icon" className="contact-icon"/>
             </a>
           </div>
         </div>

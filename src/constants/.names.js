@@ -46,10 +46,14 @@ const INSTAGRAM_FOLLOW_LINK = "https://www.google.com/url?q=https%3A%2F%2Fwww.in
 const FACEBOOK_FOLLOW_LINK = "https://www.google.com/url?q=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1301857734041287&sa=D&sntz=1&usg=AOvVaw1QOR1v6JxQrRJhz9S8lnt_";
 const TELEGRAM_FOLLOW_LINK = "https://www.google.com/url?q=https%3A%2F%2Ft.me%2Fkrop_robots&sa=D&sntz=1&usg=AOvVaw3vUQ9H8GIBWV7TCiHrGLfF";
 const YOUTUBE_FOLLOW_LINK = "https://www.youtube.com/channel/UCYfDya9ENcC7pOS9BBpXn-g";
-
+const TIKTOK_FOLLOW_LINK = "https://www.tiktok.com/@krop_robots";
 
 const FOLLOW_LINKS = {
-  INSTAGRAM_FOLLOW_LINK, FACEBOOK_FOLLOW_LINK, TELEGRAM_FOLLOW_LINK, YOUTUBE_FOLLOW_LINK
+  INSTAGRAM_FOLLOW_LINK,
+  FACEBOOK_FOLLOW_LINK,
+  TELEGRAM_FOLLOW_LINK,
+  YOUTUBE_FOLLOW_LINK,
+  TIKTOK_FOLLOW_LINK
 }
 
 const REGISTER_ROBOT_SUMO_LINK = "https://forms.gle/visNrfF53YPETeLJ9";
