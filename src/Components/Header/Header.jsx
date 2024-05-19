@@ -44,7 +44,7 @@ function Header(props) {
         <img src="text_white.png" width={50} height={50} alt="krop_robots logo-text"/>
       </div>
       <div className={`tools-container`}>
-        <NavLink to={`#`} id={`krop-robots-shop-link`}>
+        <NavLink to={`#`} id={`krop-robots-shop-link`} onClick={linkNavWarnMassageHandler}>
           Krop Robots Shop
         </NavLink>
         <RxHamburgerMenu
