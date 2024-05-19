@@ -48,7 +48,7 @@ function SumoIntroductionBlock(props) {
           transition={{ease: "linear", duration: 0.75, delay: 1}}
         >
           <div className={`sumo-introduction-block-img-box`}>
-            <img src="./robot-fighting-3.png" alt="robot fight image"/>
+            <img src="./robot-fighting-3.jpg" alt="robot fight image"/>
             <div className={`sumo-introduction-img-shadow`}/>
           </div>
         </motion.div>
