@@ -13,7 +13,7 @@
   }
   @media screen and (max-width: 480px) {
     ::-webkit-scrollbar {
-      width: 3px;
+      width: 1px;
     }
   }
   ::-webkit-scrollbar-track {
@@ -35,27 +35,34 @@
   }
 
 }
-input, textaream, select, button {
+input, textarea, select, button {
   font: inherit;
 }
+
 
 
 
 html {
   font-size: $gb-font-size;
   scroll-behavior: smooth;
-  height: 100%;
+  width: 100%;
 }
 
 body {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
   background: var(--body-bg-color);
   transition: 1s ease background;
   section {
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
