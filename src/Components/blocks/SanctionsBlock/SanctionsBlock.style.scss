@@ -2,19 +2,13 @@
 @import '../../../style/_variables.scss';
 @import '../../../style/_mixins.scss';
 
-@mixin shadow-text-block($main-color) {
-  .text-blocks-wrapper__text-block__subtitle-box {
-    color: $main-color;
-  }
-  border: $main-color 2px solid;
-  box-shadow: 0 0 15px 2px $main-color;
-}
 
 .sanctions-block {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4rem 0;
   img[alt="ban-hammer"] {
     position: absolute;
     width: 100%;
@@ -22,7 +16,7 @@
     object-fit: cover;
     object-position: center;
   }
-  @include top__and__bottom__darkening($sanctions-block-image-darkening);
+  //@include top__and__bottom__darkening($sanctions-block-image-darkening);
 
   .sanctions-block__content-wrapper {
     z-index: 10;
@@ -38,7 +32,7 @@
       padding: 1rem 0.5rem;
       font-weight: 400;
       font-size: 2.225rem;
-      color: #99AA99;
+      color: var(--sanctions-block-main-title-color);
     }
     .sanctions-block__content-wrapper__text-blocks-wrapper {
       display: grid;
@@ -58,21 +52,29 @@
           font-size: 1.5rem;
         }
         span {
-
+          color: var(--sanctions-block-simple-text-color);
         }
       }
       .text-block-i-1 {
-        @include shadow-text-block(#F2B42D)
+        @include shadow-text-block(var(--sanctions-block-first-card-accent-color))
       }
       .text-block-i-2 {
-        @include shadow-text-block(#D7455E)
+        @include shadow-text-block(var(--sanctions-block-second-card-accent-color))
       }
       .text-block-i-3 {
-        @include shadow-text-block(#DD785E)
+        @include shadow-text-block(var(--sanctions-block-third-card-accent-color))
       }
       .text-block-i-4 {
-        @include shadow-text-block(#48A8E2)
+        @include shadow-text-block(var(--sanctions-block-fourth-card-accent-color))
       }
     }
   }
 }
+
+html[data-theme="light"] {
+  .text-blocks-wrapper__text-block {
+    box-shadow: 0 4px 25px 1px rgba(0,0,0,0.25) !important;
+  }
+}
+
+

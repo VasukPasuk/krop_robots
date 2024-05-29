@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './SumoIntroduction.block.style.scss';
 import {motion} from "framer-motion";
+import ThemeContext from "../../../context/ThemeContext";
 
 function SumoIntroductionBlock(props) {
+  const {theme} = useContext(ThemeContext)
   return (
     <section className={`sumo-introduction-block`}>
       <div className={`sumo-introduction-block-text-wrapper`}>
@@ -10,6 +12,7 @@ function SumoIntroductionBlock(props) {
           <motion.h1
             initial={{x: -50, opacity: 0}}
             whileInView={{x: 0, opacity: 1}}
+            viewport={{once: true}}
             transition={{ease: "easeOut", duration: 0.75, delay: 0.25}}
           >
             <h1 className={`sumo-introduction-title s-i-title1`}>
@@ -20,6 +23,7 @@ function SumoIntroductionBlock(props) {
           <motion.h2
             initial={{x: -50, opacity: 0}}
             whileInView={{x: 0, opacity: 1}}
+            viewport={{once: true}}
             transition={{ease: "easeOut", duration: 0.75, delay: 0.5}}
           >
             <h2 className={`sumo-introduction-title s-i-title2`}>
@@ -31,6 +35,7 @@ function SumoIntroductionBlock(props) {
         <motion.div
           initial={{x: -50, opacity: 0}}
           whileInView={{x: 0, opacity: 1}}
+          viewport={{once: true}}
           transition={{ease: "easeInOut", duration: 0.75, delay: 0.75}}
         >
           <div className={`sumo-introduction-main-text`}>
@@ -48,8 +53,18 @@ function SumoIntroductionBlock(props) {
           transition={{ease: "linear", duration: 0.75, delay: 1}}
         >
           <div className={`sumo-introduction-block-img-box`}>
-            <img src="./robot-fighting-3.jpg" alt="robot fight image"/>
-            <div className={`sumo-introduction-img-shadow`}/>
+            {theme === "dark" ? (
+                <>
+                  <img src="./robot-fighting-3-removebg-preview.png" alt="robot fight image"/>
+                  {/*<div className={`sumo-introduction-img-shadow`}/>*/}
+                </>
+              )
+              :
+              (
+                <>
+                  <img src="./robot-fighting-white-bg-black-figure-removebg-preview.png" alt="robot fight image"/>
+                </>
+            )}
           </div>
         </motion.div>
       </div>

@@ -1,12 +1,12 @@
-@import '../../../style/_colors.scss';
-@import '../../../style/_variables.scss';
+@import '../../../style/colors';
+@import '../../../style/variables';
 
 .scroll-to-top-button {
   opacity: 0;
   position: fixed;
   bottom: 5%;
   right: 2.5%;
-  background: $bg-gray-600;
+  background: var(--scroll-to-top-button-bg-color);
   color: white;
   border: none;
   width: 50px;
@@ -17,15 +17,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 1s ease, background 1s ease;
+  box-shadow: 0 0 5px 2px $bg-gray-600;
   #scroll-to-icon {
+    transition: color 1s ease;
     font-size: 1.5rem;
+    color: var(--scroll-to-top-button-arrow-color);
   }
   @media screen and (max-width: 480px){
     bottom: 3.5%;
     right: 7.5%;
   }
-  transition: opacity 1s ease;
-  box-shadow: 0 0 15px 5px $bg-gray-600;
+
 }
 .scroll-to-top-button__visible {
   opacity: 1;

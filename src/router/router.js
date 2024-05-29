@@ -3,25 +3,26 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import MainPage from "../pages/Main.page";
 import Layout from "../Components/Layout";
 import RobotSumoFull from "../pages/RobotSumoFull.page";
+import {MAIN_ROUTE, HOME_ROUTE, NEWS_ROUTE, SUMO_DESCRIPTION_ROUTE} from "../constants/.routes";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: MAIN_ROUTE,
     element: <Layout/>,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: MAIN_ROUTE,
         element: <MainPage/>,
         errorElement: <ErrorPage />,
       },
       {
-        path: '/home',
+        path: HOME_ROUTE,
         element: <MainPage/>,
         errorElement: <ErrorPage />,
       },
       {
-        path: '/robot-sumo-full',
+        path: SUMO_DESCRIPTION_ROUTE,
         element: <RobotSumoFull/>,
         errorElement: <ErrorPage />,
       },

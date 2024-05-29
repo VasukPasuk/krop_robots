@@ -4,14 +4,16 @@
 .sumo-zones-block {
   display: grid;
   grid-template: auto 95% / 100%;
-  color: white;
+  color: black;
+  margin-top: 2rem;
   .sumo-zones-title {
     display: flex;
     justify-content: center;
     align-items: center;
     span {
       padding: 0.5rem 1.25rem;
-      background: #FF5C00;
+      //background: #FF5C00;
+      font-weight: 700;
       border-radius: 4px;
       font-size: 1.5rem;
       animation: title-pulsation 2s linear infinite;
@@ -19,42 +21,63 @@
   }
   .sumo-zones-cards-wrapper {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    padding: 2rem 10rem;
+    gap: 2rem;
     @media screen and (max-width: 680px) {
       grid-template: repeat(6, 1fr) / 100%;
-      padding: 2rem;
+      padding: 1rem;
+      gap: 1rem;
     }
-    padding: 2rem 12rem;
-    gap: 2rem;
+
     .sumo-zones-card {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
-      align-items: center;
-      text-align: center;
+      align-items: start;
+      text-align: left;
       border-radius: 8px;
-      background: #382C2C;
-      padding: 1rem 2rem;
+      background: transparent;
+      padding: 1rem 1.5rem;
+      transition: transform 0.5s ease;
+      //box-shadow: var(--zones-block-shadow-color);
+      gap: 2rem;
+      height: 100%;
       @media screen and (max-width: 680px) {
         padding: 1rem 3rem;
+        gap: 2rem;
+        height: auto;
       }
-      box-shadow: 2px 2px 0 1px rgba(255, 255, 255, 0.25);
-      transition: transform 0.5s ease;
-      &:hover {
-        transform: scale(1.075);
+      .card-icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 0.5rem;
+        border-radius: 25%;
+        border: 2px solid var(--zones-block-icon-color);
+        border-top: none;
+        border-bottom: none;
+        svg {
+          font-size: 2.5rem;
+          color: var(--zones-block-icon-color);
+        }
+      }
+      .main-text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--zones-block-text-color);
+        .main-text-box__title-text-box {
+          font-weight: 700;
+          font-size: 1.5rem;
+          color: var(--zones-block-title-color);
+          border-bottom: 2px solid rgba(0,0,0,0.1);
+        }
+        .main-text-box__sub-text-box {
+          font-weight: 400;
+        }
       }
     }
   }
 }
 
-@keyframes title-pulsation {
-  0% {
-    box-shadow: 0 0 5px 5px #FF5C00;
-  }
-  50% {
-    box-shadow: 0 0 25px 5px #FF5C00;
-  }
-  100% {
-    box-shadow: 0 0 5px 5px #FF5C00;
-  }
-}

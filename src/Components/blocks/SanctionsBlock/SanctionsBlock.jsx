@@ -5,7 +5,7 @@ import {TbCookieOff} from "react-icons/tb";
 function SanctionsBlock(props) {
   return (
     <section className={`sanctions-block`}>
-      <img src="ban-hammer.png" alt="ban-hammer"/>
+      {/*<img src="ban-hammer.png" alt="ban-hammer"/>*/}
       <div className={`sanctions-block__content-wrapper`}>
         <h1 className={`sanctions-block__content-wrapper__title-box`}>
           <TbCookieOff />

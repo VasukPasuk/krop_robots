@@ -5,11 +5,12 @@ import {FaMapLocationDot} from "react-icons/fa6";
 import {LuArrowBigDownDash} from "react-icons/lu";
 import {useLocation} from "react-router-dom";
 import {FOLLOW_LINKS} from "../../constants/.names";
+import {SUMO_DESCRIPTION_ROUTE} from "../../constants/.routes";
 
 function Footer(props) {
   const location = useLocation();
   const currentPath = location.pathname.replace('/','');
-  if (currentPath === 'robot-sumo-full') return
+  if (currentPath === SUMO_DESCRIPTION_ROUTE.substring(1)) return
   return (
     <footer>
       <div className={`footer-top`}>

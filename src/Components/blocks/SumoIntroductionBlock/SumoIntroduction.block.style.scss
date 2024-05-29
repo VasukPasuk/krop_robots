@@ -6,15 +6,17 @@
   grid-template: 100% / 50% auto;
   @media screen and (max-width: 680px) {
     grid-template:  50% auto / 100%;
+    margin: 6rem 0;
   }
+
   .sumo-introduction-block-text-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
-    color: white;
     gap: 1.275rem;
+    color: var(--global-simple-text-color);
     @media screen and (max-width: 680px) {
       padding: 0 3rem;
     }
@@ -23,6 +25,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .sumo-introduction-title {
        text-align: center;
       }
@@ -43,7 +46,8 @@
     }
     .sumo-introduction-main-text {
       text-align: center;
-      font-weight: 300;
+      font-weight: 400;
+      font-size: 1.1275rem;
     }
   }
 
@@ -65,10 +69,11 @@
       img {
         width: 100%;
         height: 100%;
-        //transition: transform 0.325s ease;
-        //&:hover {
-        //  transform: scale(1.1);
-        //}
+        transition: transform 1s ease;
+        filter: opacity(0.7675);
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
     .sumo-introduction-img-shadow {

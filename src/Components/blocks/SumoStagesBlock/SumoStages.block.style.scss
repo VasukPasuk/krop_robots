@@ -1,5 +1,6 @@
 @import '../../../style/_colors.scss';
 @import '../../../style/_variables.scss';
+@import '../../../style/_mixins.scss';
 
 .sumo-stages-block {
   position: relative;
@@ -7,9 +8,10 @@
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  color: white;
-  padding: 2rem 0;
-
+  color: var(--sumo-stages-block-simple-text-color);
+  padding: 2rem 0 8rem 0;
+  background: var(--sumo-stages-block-bg-color);
+  transition: 1s ease background;
   .sumo-stages-block__title-box {
     position: relative;
     width: 70%;
@@ -18,7 +20,7 @@
     font-size: 2.75rem;
     #stages-title {
       position: relative;
-      color: #48A8E2;
+      color: var(--sumo-stages-block-title-accent-color);
     }
     #stages-title::before {
       position: absolute;
@@ -27,7 +29,7 @@
       height: 3px;
       top: 100%;
       left: 0;
-      background: #48A8E2;
+      background: var(--sumo-stages-block-title-accent-color);
     }
   }
 
@@ -54,42 +56,15 @@
         font-size: 1.3225rem;
       }
       &:nth-child(1) {
-        .number-box__circle {
-          border: 2px solid greenyellow;
-          color: greenyellow;
-        }
-        .sumo-stages-block__text-container__text-block__text-box {
-          .sumo-stages-block__text-container__text-block__text-box__subtitle-box {
-            color: greenyellow;
-            font-size: 1.75rem;
-          }
-        }
+        @include sumo-stages-number-and-title-colors(var(--sumo-stages-block-first-column-accent-color))
       }
 
       &:nth-child(2) {
-        .number-box__circle {
-          border: 2px solid #D7455E;
-          color: #D7455E;
-        }
-        .sumo-stages-block__text-container__text-block__text-box {
-          .sumo-stages-block__text-container__text-block__text-box__subtitle-box {
-            color: #D7455E;
-            font-size: 1.75rem;
-          }
-        }
+        @include sumo-stages-number-and-title-colors(var(--sumo-stages-block-second-column-accent-color))
       }
 
       &:nth-child(3) {
-        .number-box__circle {
-          border: 2px solid #FF5C00;
-          color: #FF5C00;
-        }
-        .sumo-stages-block__text-container__text-block__text-box {
-          .sumo-stages-block__text-container__text-block__text-box__subtitle-box {
-            color: #FF5C00;
-            font-size: 1.75rem;
-          }
-        }
+        @include sumo-stages-number-and-title-colors(var(--sumo-stages-block-third-column-accent-color))
       }
       .sumo-stages-block__text-container__text-block__text-box {
         .sumo-stages-block__text-container__text-block__text-box__subtitle-box {

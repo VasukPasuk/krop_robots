@@ -21,4 +21,21 @@
     width: 100%;
     padding: 1rem 1.5rem;
   }
+  .close-menu-button {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    opacity: 1;
+    transition: all 1s ease;
+    svg {
+      font-size: 1.75rem;
+    }
+  }
+  &[data-active-menu="false"] {
+    .close-menu-button {
+      opacity: 0;
+    }
+  }
 }

@@ -13,8 +13,8 @@ function MainPage(props) {
       <IntroductionBlock/>
       <CarouselBlock/>
       <SumoIntroductionBlock/>
-      <SumoZonesBlock/>
       <SumoStagesBlock/>
+      <SumoZonesBlock/>
       <TimeToRepair/>
       <SanctionsBlock/>
     </>

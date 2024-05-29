@@ -1,10 +1,11 @@
 @import './_colors.scss';
+
 $logo-size: 64px;
 $gb-font-size: 16px;
 
 /* [body variables] */
 
-$body-bg-color: rgb(0, 0, 0);;
+$body-bg-color: rgb(0, 0, 0);
 
 /* [thumber variables] */
 
@@ -15,10 +16,103 @@ $repairing-block-image-darkening: 0.5;
 /* [header variables] */
 $header-height: 64px;
 $header-bg-color: #FF7A2F;
-$header-link-color: rgb(0,0,0);
+$header-link-color: rgb(0, 0, 0);
 $header-gap: 1rem;
-$padding-left: 2rem;
-$padding-right: 1rem;
+$header-padding-left: 2rem;
+$header-padding-right: 1rem;
+
+
+/* [DYNAMIC LIGHT-DARK-THEME variables] */
+
+:root {
+  /* [global dynamic variables] */
+  --global-simple-text-color: white;
+
+  /* [header dynamic variables] */
+  --header-bg-main-color: #FF7A2F;
+  --header-text-color: rgb(0, 0, 0);
+
+  /* [body dynamic variables] */
+  --body-bg-color: black;
+
+  /* [zones block variables] */
+  --zones-block-icon-color: #{$bg-gray-400};
+  --zones-block-title-color: #{$bg-blue-300};
+  --zones-block-text-color: white;
+  --zones-block-shadow-color: 0 0 5px 5px black;
+
+  /* [scroll-to-top-button variables] */
+  --scroll-to-top-button-bg-color: white;
+  --scroll-to-top-button-arrow-color: black;
+
+  /* [sumo stages block variables] */
+  --sumo-stages-block-bg-color: transparent;
+  --sumo-stages-block-title-accent-color: #48A8E2;
+  --sumo-stages-block-first-column-accent-color: greenyellow;
+  --sumo-stages-block-second-column-accent-color: #D7455E;
+  --sumo-stages-block-third-column-accent-color: #FF5C00;
+  --sumo-stages-block-simple-text-color: white;
+
+  /* [footer variables] */
+  --footer-bg-color: rgb(25, 15, 19);
+
+  /* [time-to-repair block variables] */
+  --time-to-repair-block-bg-color: transparent;
+
+  /* [sanctions block variables] */
+  --sanctions-block-main-title-color: #99AA99;
+  --sanctions-block-first-card-accent-color: #F2B42D;
+  --sanctions-block-second-card-accent-color: #D7455E;
+  --sanctions-block-third-card-accent-color: #DD785E;
+  --sanctions-block-fourth-card-accent-color: #48A8E2;
+  --sanctions-block-simple-text-color: white;
+}
+
+html[data-theme="light"] {
+  /* [global dynamic variables] */
+  --global-simple-text-color: #{$bg-gray-700};
+
+  /* [header dynamic  variables] */
+  --header-bg-main-color: rgb(29, 78, 216, 0.75);
+  --header-bg-transp-color: transparent;
+  --header-text-color: white;
+
+  /* [body dynamic variables] */
+  --body-bg-color: white;
+
+  /* [zones block variables] */
+  --zones-block-icon-color: #{$bg-gray-700};
+  --zones-block-title-color: #{$bg-gray-700};
+  --zones-block-text-color: #{$bg-gray-600};
+  --zones-block-shadow-color: 0 2px 5px 2px rgba(0, 0, 0, 0.25);
+
+  /* [scroll-to-top-button variables] */
+  --scroll-to-top-button-bg-color: black;
+  --scroll-to-top-button-arrow-color: white;
+
+  /* [sumo stages block variables] */
+  --sumo-stages-block-bg-color: #{$bg-blue-950};
+  --sumo-stages-block-title-accent-color: white;
+  --sumo-stages-block-first-column-accent-color: white;
+  --sumo-stages-block-second-column-accent-color: white;
+  --sumo-stages-block-third-column-accent-color: white;
+  --sumo-stages-block-simple-text-color: white;
+
+  /* [footer variables] */
+  --footer-bg-color: #182538;
+
+  /* [time-to-repair block variables] */
+  --time-to-repair-block-bg-color: #{$bg-blue-950};
+
+  /* [sanctions block variables] */
+  --sanctions-block-main-title-color: black;
+  --sanctions-block-first-card-accent-color: black;
+  --sanctions-block-second-card-accent-color: black;
+  --sanctions-block-third-card-accent-color: black;
+  --sanctions-block-fourth-card-accent-color: black;
+  --sanctions-block-simple-text-color: black;
+}
+
 
 /* [right-menu variables] */
 $right-menu-width: 25%;
@@ -32,7 +126,7 @@ $circle-active-color: $bg-gray-500;
 $tag-icon-color: #FF5B37;
 
 /* [footer variables] */
-$footer-bg-color: rgb(25,15,19);
+$footer-bg-color: rgb(25, 15, 19);
 
 /* [robot-sumo-full-block variables] */
 

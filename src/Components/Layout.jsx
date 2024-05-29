@@ -1,17 +1,22 @@
 import React from 'react';
 import './Layout.style.scss'
-
 import {ToastContainer} from "react-toastify";
 import Header from "./Header/Header";
 import {Outlet} from "react-router-dom";
 import Footer from "./Footer/Footer";
-import ScrollToTopButton from "./blocks/ScrollTopButton/ScrollTopButton";
+import ScrollToTopButton from "./ui/ScrollTopButton/ScrollTopButton";
+import MenuProvider from "../context/MenuProvider";
+import MenuBox from "./ui/MenuBox/MenuBox";
 
 function Layout(props) {
   return (
     <>
       {/* --------> FOOTER <-------- */}
-      <Header/>
+      <MenuProvider>
+        <Header/>
+        <MenuBox/>
+      </MenuProvider>
+      
       {/* --------> FOOTER <-------- */}
       
       {/* --------> MAIN CONTENT <-------- */}

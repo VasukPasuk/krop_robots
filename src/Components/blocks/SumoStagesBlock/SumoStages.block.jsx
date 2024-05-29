@@ -1,11 +1,17 @@
 import React from 'react';
 import './SumoStages.block.style.scss';
 
+
+
 function SumoStagesBlock(props) {
   return (
-    <div className={`sumo-stages-block`}>
+    <div
+      className={`sumo-stages-block`}
+    >
       <h1 className={`sumo-stages-block__title-box`}>
-        <span id={`stages-title`}>
+        <span
+          id={`stages-title`}
+        >
           Етапи змагань
         </span>
       </h1>
