@@ -15,7 +15,7 @@ function IntroductionBlock(props) {
           <AppearAnimationWrapper h={3} delay={0.75} duration={1}>
             <h3>Дивовижна STEM-освіта <br/> без обмежень</h3>
           </AppearAnimationWrapper>
-          <img src="./164.jpg" alt=""/>
+          <img src="./main-preview-photo.JPG" alt=""/>
           <div
             className={`bg-blur-item`}
             data-blur-mode={theme === "dark" ? 'dark-blur' : 'light-blur'}
