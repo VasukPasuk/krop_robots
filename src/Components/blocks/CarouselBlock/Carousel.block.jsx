@@ -23,6 +23,7 @@ const TAGS_DATA = [
 
 
 function CarouselBlock(props) {
+  
   const [currentImage, setCurrentImage] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -100,7 +101,43 @@ function CarouselBlock(props) {
         </ul>
       </div>
     </section>
-  );
+  )
 }
 
 export default CarouselBlock;
+
+
+// const [imagesArray, setImagesArray] = useState([
+//   'slider-image1.jpg',
+//   'slider-image2.jpg',
+//   'slider-image3.jpg',
+//   'slider-image4.jpg',
+//   'slider-image5.jpg',
+// ])
+// const [currentPosArray, setCurrentPosArray] = useState([1,2,3,4,5])
+// return (
+//   <section className="carousel__block">
+//     <div className="carousel__block__images-carousel-container">
+//       {imagesArray.map((src, index) => (
+//         <img src={src} alt={String(src)} className={`carousel-image-item-${currentPosArray[index]}`}/>
+//       ))}
+//     </div>
+//     <div>
+//       <button onClick={() => setCurrentPosArray(prev => {
+//         const newArr = [prev[4],...prev.slice(0, 4)];
+//         console.log(newArr)
+//         return newArr
+//       })}>
+//         to left
+//       </button>
+//       <button onClick={() => setCurrentPosArray(prev => {
+//         const newArr = [...prev.slice(1, 5), prev[0]];
+//         console.log(newArr)
+//         return newArr
+//
+//       })}>
+//         to right
+//       </button>
+//     </div>
+//   </section>
+// );

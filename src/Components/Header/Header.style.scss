@@ -67,7 +67,7 @@ header {
     #settings-icon {
       font-size: 2rem;
       cursor: pointer;
-
+      transition: 1s ease color;
       &:hover {
         animation: gear-rotation 5s linear infinite;
       }

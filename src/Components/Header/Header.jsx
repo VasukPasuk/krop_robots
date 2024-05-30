@@ -60,11 +60,11 @@ function Header(props) {
         <ThemeChanger/>
         <RxHamburgerMenu
           className={`hamburger-menu`}
-          onClick={() => setCurrentMenu(1)}
+          // onClick={() => setCurrentMenu(1)}
         />
         <AiFillSetting
           id="settings-icon"
-          onClick={() => setCurrentMenu(2)}
+          // onClick={() => setCurrentMenu(2)}
         />
       </div>
     </header>
