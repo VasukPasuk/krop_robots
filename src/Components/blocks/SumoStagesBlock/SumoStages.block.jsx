@@ -1,60 +1,60 @@
 import React from 'react';
 import './SumoStages.block.style.scss';
+import {motion} from "framer-motion";
 
-
+const SUMO_STAGES_TEXT_DATA = [
+  {
+    subTitleText: "Реєстрація",
+    mainText: "Команди проходять реєстрацію та отримують номери.",
+  },
+  {
+    subTitleText: "Підготовка роботів",
+    mainText: "Учасники збирають, налаштовують та тестують своїх роботів.",
+  },
+  {
+    subTitleText: "Жеребкування",
+    mainText: "Формується кінцева турнірна таблиця.",
+  }
+]
 
 function SumoStagesBlock(props) {
   return (
-    <div
-      className={`sumo-stages-block`}
-    >
+    <div className={`sumo-stages-block`}>
       <h1 className={`sumo-stages-block__title-box`}>
-        <span
-          id={`stages-title`}
+        <motion.span
+          initial={{x: -50, opacity: 0}}
+          whileInView={{x: 0, opacity: 1}}
+          viewport={{once: true}}
+          transition={{ ease: "easeOut", duration: 0.5, delay: 0.25 }}
         >
-          Етапи змагань
-        </span>
+          <span id={`stages-title`}>
+            Етапи змагань
+          </span>
+        </motion.span>
       </h1>
       <ul className={`sumo-stages-block__text-container`}>
-        <li className={`sumo-stages-block__text-container__text-block`}>
-          <div className={`sumo-stages-block__text-container__text-block__number-box`}>
-            <div className={`number-box__circle`}>1</div>
-          </div>
-          <div className={`sumo-stages-block__text-container__text-block__text-box`}>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__subtitle-box`}>
-              Реєстрація
-            </div>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__main-text-box`}>
-              Команди проходять реєстрацію та отримують номери.
-            </div>
-          </div>
-        </li>
-        <li className={`sumo-stages-block__text-container__text-block`}>
-          <div className={`sumo-stages-block__text-container__text-block__number-box`}>
-            <div className={`number-box__circle`}>2</div>
-          </div>
-          <div className={`sumo-stages-block__text-container__text-block__text-box`}>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__subtitle-box`}>
-              Підготовка роботів
-            </div>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__main-text-box`}>
-              Учасники збирають, налаштовують та тестують своїх роботів.
-            </div>
-          </div>
-        </li>
-        <li className={`sumo-stages-block__text-container__text-block`}>
-          <div className={`sumo-stages-block__text-container__text-block__number-box`}>
-            <div className={`number-box__circle`}>3</div>
-          </div>
-          <div className={`sumo-stages-block__text-container__text-block__text-box`}>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__subtitle-box`}>
-              Жеребкування
-            </div>
-            <div className={`sumo-stages-block__text-container__text-block__text-box__main-text-box`}>
-              Формується турнірна таблиця.
-            </div>
-          </div>
-        </li>
+        {SUMO_STAGES_TEXT_DATA.map((data, index) => (
+          <motion.li
+            initial={{x: -50, opacity: 0}}
+            whileInView={{x: 0, opacity: 1}}
+            viewport={{once: true}}
+            transition={{ ease: "easeOut", duration: 0.5, delay: index*0.5 }}
+          >
+            <li className={`sumo-stages-block__text-container__text-block text-container__text-block-${++index}`} key={data.subTitleText}>
+              <div className={`sumo-stages-block__text-container__text-block__number-box`}>
+                <div className={`number-box__circle`}>{++index}</div>
+              </div>
+              <div className={`sumo-stages-block__text-container__text-block__text-box`}>
+                <div className={`sumo-stages-block__text-container__text-block__text-box__subtitle-box`}>
+                  {data.subTitleText}
+                </div>
+                <div className={`sumo-stages-block__text-container__text-block__text-box__main-text-box`}>
+                  {data.mainText}
+                </div>
+              </div>
+            </li>
+          </motion.li>
+        ))}
       </ul>
     </div>
   );

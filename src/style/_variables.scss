@@ -34,7 +34,7 @@ $header-padding-right: 1rem;
   /* [header dynamic variables] */
   --header-bg-main-color: #FF7A2F;
   --header-text-color: rgb(0, 0, 0);
-
+  --header-hamburger-hover-bg-color: #{$bg-gray-300};
   /* [body dynamic variables] */
   --body-bg-color: black;
 
@@ -45,6 +45,7 @@ $header-padding-right: 1rem;
 
 
   /* [zones block variables] */
+  --zones-block-main-title-color: #{$bg-blue-400};
   --zones-block-icon-color: #{$bg-gray-400};
   --zones-block-title-color: #{$bg-blue-300};
   --zones-block-text-color: white;
@@ -85,7 +86,7 @@ html[data-theme="light"] {
   --header-bg-main-color: rgb(29, 78, 216, 0.75);
   --header-bg-transp-color: transparent;
   --header-text-color: white;
-
+  --header-hamburger-hover-bg-color: #{$bg-gray-300};
   /* [body dynamic variables] */
   --body-bg-color: white;
 
@@ -94,6 +95,7 @@ html[data-theme="light"] {
 
 
   /* [zones block variables] */
+  --zones-block-main-title-color: #{$bg-gray-800};
   --zones-block-icon-color: #{$bg-gray-700};
   --zones-block-title-color: #{$bg-gray-700};
   --zones-block-text-color: #{$bg-gray-600};

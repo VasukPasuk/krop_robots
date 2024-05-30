@@ -6,8 +6,10 @@
   position: relative;
   display: grid;
   grid-template: 100% / 60% auto;
+
   @media screen and (max-width: 760px) {
     grid-template: 80% auto / 100%;
+    margin-bottom: 8rem;
   }
   @media screen and (max-width: 480px) {
     grid-template: 50% auto / 100%;

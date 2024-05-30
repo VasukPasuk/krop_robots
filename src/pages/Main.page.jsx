@@ -6,12 +6,14 @@ import SumoZonesBlock from "../Components/blocks/SumoZonesBlock/SumoZones.block"
 import SumoStagesBlock from "../Components/blocks/SumoStagesBlock/SumoStages.block";
 import TimeToRepair from "../Components/blocks/TimeToRepairBlock/TimeToRepair";
 import SanctionsBlock from "../Components/blocks/SanctionsBlock/SanctionsBlock";
+import MembersBlock from "../Components/blocks/MembersBlock/MembersBlock";
 
 function MainPage(props) {
   return (
     <>
       <IntroductionBlock/>
       <CarouselBlock/>
+      <MembersBlock/>
       <SumoIntroductionBlock/>
       <SumoStagesBlock/>
       <SumoZonesBlock/>

@@ -21,8 +21,8 @@ function Header(props) {
   const {currentMenu, setCurrentMenu} = useContext(MenuContext)
   const [shop_notify] = useNotify(KROP_ROBOTS_SHOP_WARN_MASSAGE_TEXT)
   const [sumo_notify] = useNotify(SUMO_COMPETITIONS_WARN_MASSAGE_TEXT)
-  const location = useLocation();
-  const currentPath = location.pathname.replace('/','');
+  const {pathname} = useLocation();
+  const currentPath = pathname.replace('/','');
   const [scrollPosition, setScrollPosition] = useState(0);
   const linkNavWarnMassageHandler = () => {
     shop_notify();
@@ -33,7 +33,7 @@ function Header(props) {
   useEffect(() => {
     const scrollListener = () => {
       const scrollPosition = window.scrollY;
-      setScrollPosition(prev => scrollPosition)
+      setScrollPosition(prev => scrollPosition < 500 ? scrollPosition : 600)
     }
     window.addEventListener('scroll', scrollListener)
     return () => {
@@ -43,7 +43,7 @@ function Header(props) {
   return (
     <header
       data-set-pos={currentPath === 'robot-sumo-full' ?  'fixed':'none' }
-      style={{background: (scrollPosition < 500 && theme === "light") ? 'transparent' : ''}}
+      style={{background: (scrollPosition < 500 && theme === "light" && ['', 'home'].includes(currentPath)) ? 'transparent' : ''}}
     >
       <Link
         to={'/home'}
