@@ -42,7 +42,7 @@ function SumoStagesBlock(props) {
           >
             <li className={`sumo-stages-block__text-container__text-block text-container__text-block-${++index}`} key={data.subTitleText}>
               <div className={`sumo-stages-block__text-container__text-block__number-box`}>
-                <div className={`number-box__circle`}>{++index}</div>
+                <div className={`number-box__circle`}>{index}</div>
               </div>
               <div className={`sumo-stages-block__text-container__text-block__text-box`}>
                 <div className={`sumo-stages-block__text-container__text-block__text-box__subtitle-box`}>
