@@ -134,7 +134,7 @@
           padding-right: 4rem;
           transition: color 1s ease;
           @media screen and (max <= 680px) {
-            padding-right: 1rem;
+            padding-right: 0;
             font-size: 0.875rem;
           }
           font-weight: 300;
