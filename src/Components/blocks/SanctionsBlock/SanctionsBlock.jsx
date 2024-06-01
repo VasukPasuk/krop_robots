@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import './SanctionsBlock.style.scss';
 import {TbCookieOff} from "react-icons/tb";
+import ThemeContext from "../../../context/ThemeContext";
 
 function SanctionsBlock(props) {
+  const {theme} = useContext(ThemeContext);
   return (
     <section className={`sanctions-block`}>
-      {/*<img src="ban-hammer.png" alt="ban-hammer"/>*/}
+      {theme === "dark" && (
+        <>
+          <img src="ban-hammer.png" alt="ban-hammer"/>)
+          <div className="ban-hammer-img__darkening-block"/>
+        </>
+      )}
       <div className={`sanctions-block__content-wrapper`}>
         <h1 className={`sanctions-block__content-wrapper__title-box`}>
           <TbCookieOff />
