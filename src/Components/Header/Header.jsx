@@ -51,7 +51,7 @@ function Header(props) {
         onClick={LogoOnClickHandler}
       >
         <Logo/>
-        <img src="text_white.png" width={50} height={50} alt="krop_robots logo-text"/>
+        <img src="text_white.png"alt="krop_robots logo-text"/>
       </Link>
       <div className={`tools-container`}>
         <NavLink to={`#`} id={`krop-robots-shop-link`} onClick={linkNavWarnMassageHandler}>

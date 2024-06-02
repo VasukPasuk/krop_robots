@@ -30,6 +30,18 @@ header {
     svg {
       height: 64px;
       width: 64px;
+      @media screen and (width <= 768px ) {
+        height: 48px;
+        width: 48px;
+      }
+    }
+    & > img {
+      width: 48px;
+      height: 48px;
+      @media screen and (width <= 768px ) {
+        height: 40px;
+        width: 40px;
+      }
     }
   }
 
@@ -46,6 +58,7 @@ header {
       color: var(--header-text-color);
       overflow: hidden;
       transition: 1s ease color;
+
       @media screen and (max-width: 480px) {
         font-size: 0.75rem;
       }
@@ -70,6 +83,7 @@ header {
       transition: 1s ease color;
       &:hover {
         animation: gear-rotation 5s linear infinite;
+        color: var(--header-settings-hover-color);
       }
     }
   }
@@ -81,7 +95,7 @@ header {
     cursor: pointer;
 
     &:hover {
-      color: $bg-gray-700;
+      color: var(--header-hamburger-menu-hover-color);
     }
   }
 }

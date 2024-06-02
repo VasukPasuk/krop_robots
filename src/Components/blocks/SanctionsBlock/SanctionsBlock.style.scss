@@ -36,6 +36,21 @@
     gap: 1rem;
     color: white;
     width: 65%;
+    @media screen and (width <= 768px ) {
+      width: 75%;
+    }
+    // Large mobile
+    @media screen and (width <= 480px ) {
+      width: 80%;
+    }
+    // Medium mobile
+    @media screen and (width <= 420px ) {
+      width: 85%;
+    }
+    // Small mobile
+    @media screen and (width <= 320px ) {
+      width: 95%;
+    }
     .sanctions-block__content-wrapper__title-box {
       display: flex;
       align-items: center;

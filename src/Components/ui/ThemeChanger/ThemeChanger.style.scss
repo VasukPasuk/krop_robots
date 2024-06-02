@@ -13,6 +13,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (width <= 320px) {
+    width: 4rem;
+  }
   .theme-changer__circle {
     transition: 1s ease all;
     display: flex;
@@ -37,6 +40,9 @@
         color: white;
       }
       transform: translate(114%);
+      @media screen and (width <= 320px) {
+        transform: translate(100%);
+      }
     }
   }
   &[data-theme="dark"] {
@@ -47,6 +53,9 @@
         color: black;
       }
       transform: translate(-115%);
+      @media screen and (width <= 320px) {
+        transform: translate(-100%);
+      }
     }
   }
 }
